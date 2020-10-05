@@ -28,5 +28,30 @@
             </label>
             <input name="submit" type="submit" />
         </form>
+
+        <p>Cats or Dogs</p>
+        <form action="">
+            <label for="dogs">Dogs:</label>
+            <!--radio button  -->
+            <!-- giving the raido button the same name connects them so only one can be checked at a time. -->
+            <input type="radio" name="petChoice" id="dogs" value="dogs" />
+
+            <label for="cats">Cats:</label>
+            <input type="radio" name="petChoice" id="cats" value="cats" />
+            <!-- if the button is the last thing in the form the uto form will auto submit the button -->
+            <!-- the value with give the http request the info from what was selected -->
+            <!-- the select tag gives us a drop down menu, and the option tage gives us the options -->
+            <p>current mood?</p>
+            <label for="mood">Moods</label>
+            <select name="mood">
+                <option value="happy">:)</option>
+                <option value="blah">:/</option>
+                <option value="sad">:(</option>
+            </select>
+
+            <!-- Text area tag for multiple lines -->
+            <textarea name="paragraph" id="" cols="10" rows="10"></textarea>
+            <button>Go!</button>
+        </form>
     </body>
 </html>
