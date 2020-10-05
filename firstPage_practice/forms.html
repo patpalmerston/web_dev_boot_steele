@@ -8,8 +8,24 @@
         <!-- action - where the form send data to -->
         <!-- method - what HTTP method (get/post) -->
         <form>
-            <input name="username" type="text" placeholder="username" />
-            <input name="password" type="password" placeholder="password" />
+            <label for="">
+                Email:
+                <input
+                    name="email"
+                    type="email"
+                    placeholder="username"
+                    required
+                />
+            </label>
+            <label for="">
+                Password:
+                <input
+                    name="password"
+                    type="password"
+                    placeholder="password"
+                    required
+                />
+            </label>
             <input name="submit" type="submit" />
         </form>
     </body>
