@@ -40,7 +40,7 @@
             <input type="radio" name="petChoice" id="cats" value="cats" />
             <!-- if the button is the last thing in the form the uto form will auto submit the button -->
             <!-- the value with give the http request the info from what was selected -->
-            <!-- the select tag gives us a drop down menu, and the option tage gives us the options -->
+            <!-- the select tag gives us a drop down menu, and the option tag gives us the options -->
             <p>current mood?</p>
             <label for="mood">Moods</label>
             <select name="mood">
@@ -52,6 +52,52 @@
             <!-- Text area tag for multiple lines -->
             <textarea name="paragraph" id="" cols="10" rows="10"></textarea>
             <button>Go!</button>
+        </form>
+        <!-- Registration -->
+        <form action="">
+            <h1>Registration</h1>
+            <!-- first and last name text input -->
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" required />
+            <label for="">Last Name:</label>
+            <input type="text" name="lastName" required />
+            <!-- Male or Female radio buttons -->
+            <br />
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <!-- email and password -->
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" />
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                minlength="8"
+            />
+            <!-- Birthday -->
+            <br />
+            <label for="birthday">Birthday:</label>
+            <select name="month" id="birthday">
+                <option value="month">Month</option>
+                <option value="jan">Jan</option>
+                <option value="feb">Feb</option>
+            </select>
+            <select name="day" id="birthday">
+                <option value="mon">monday</option>
+            </select>
+            <select name="year" id="birthday">
+                <option value="1980">1980</option>
+            </select>
+            <br />
+            <p>I agree to theses conditions <input type="checkbox" /></p>
+
+            <button>Submit</button>
         </form>
     </body>
 </html>
