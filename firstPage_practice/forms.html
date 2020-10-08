@@ -58,46 +58,53 @@
             <h1>Registration</h1>
             <!-- first and last name text input -->
             <label for="firstName">First Name:</label>
-            <input type="text" name="firstName" required />
+            <input type="text" name="firstName" required id="firstName" />
             <label for="">Last Name:</label>
-            <input type="text" name="lastName" required />
+            <input type="text" name="lastName" id="lastName" required />
             <!-- Male or Female radio buttons -->
-            <br />
-            <label for="male">Male</label>
-            <input type="radio" id="male" name="gender" value="male" />
-            <label for="female">Female</label>
-            <input type="radio" id="female" name="gender" value="female" />
-            <label for="other">Other</label>
-            <input type="radio" id="other" name="gender" value="other" />
-            <!-- email and password -->
-            <br />
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Email" />
-            <label for="password">Password:</label>
-            <input
-                type="password"
-                id="password"
-                placeholder="Password"
-                minlength="8"
-            />
-            <!-- Birthday -->
-            <br />
-            <label for="birthday">Birthday:</label>
-            <select name="month" id="birthday">
-                <option value="month">Month</option>
-                <option value="jan">Jan</option>
-                <option value="feb">Feb</option>
-            </select>
-            <select name="day" id="birthday">
-                <option value="mon">monday</option>
-            </select>
-            <select name="year" id="birthday">
-                <option value="1980">1980</option>
-            </select>
-            <br />
-            <p>I agree to theses conditions <input type="checkbox" /></p>
 
-            <button>Submit</button>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other" />
+            </div>
+            <!-- email and password -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" />
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    minlength="8"
+                />
+            </div>
+            <!-- Birthday -->
+            <div>
+                <label for="birthday">Birthday:</label>
+                <select name="month" id="birthday">
+                    <option value="month">Month</option>
+                    <option value="jan">Jan</option>
+                    <option value="feb">Feb</option>
+                </select>
+                <select name="day" id="birthday">
+                    <option value="mon">Day</option>
+                    <option value="mon">monday</option>
+                </select>
+                <select name="year" id="birthday">
+                    <option value="1980">Year</option>
+                    <option value="1980">1980</option>
+                </select>
+            </div>
+            <div>
+                <p>I agree to theses conditions <input type="checkbox" /></p>
+
+                <button>Submit</button>
+            </div>
         </form>
     </body>
 </html>
