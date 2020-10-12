@@ -1,5 +1,11 @@
+body {
+    font-size: 10px;
+}
+
 h1 {
     color: purple;
+    font-family: Georgia;
+    font-size: 5em;
 }
 
 li {
@@ -8,4 +14,13 @@ li {
 
 h4 {
     color: blue;
+}
+
+p {
+    font-family: Arial;
+    font-size: 2em;
+}
+
+span {
+    font-size: 2em;
 }
