@@ -96,29 +96,34 @@
     </tbody>
 </table>
 <form>
-    <label for="firstName">First Names</label>
-    <input type="text" name='first_name' id='firstName' placeholder="First Name" required>
-    <label for="lastName">Last Name</label>
-    <input type="text" name='last_name' id='lastName' placeholder="Last Name" required>
-    <br>
-    <label for="race">Select a Race</label>
-    <br>
-    <input type="radio" id='race' name='fun'>Fun Run 5k</input>
-    <br>
-    <input type="radio" id='race' name='fun'>Half Marathon</input>
-    <br>
-    <input type="radio" id='race' name='fun'>Full Marathon</input>
-    <br>
-    <label for="email">Email</label>
-    <input type="email" id='email'>
-    <label for="password">Password</label>
-    <input type="password" id='password'>
+    <h1>Race Registration</h1>
+    <div>
+        <label for="firstName">First Names</label>
+        <input type="text" name='first_name' id='firstName' placeholder="First Name" required>
+        <label for="lastName">Last Name</label>
+        <input type="text" name='last_name' id='lastName' placeholder="Last Name" required>
+    </div>
+    <div>     
+        <input type="radio" id='funRun' name='race'>
+        <label for="funRun">Fun Run</label>
+        <input type="radio" id='half' name='race'>
+        <label for="half">Half Marathon</label>
+        <input type="radio" id='full' name='race'>
+        <label for="full">Full Marathon</label>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id='email'>
+        <label for="password">Password</label>
+        <input type="password" id='password'>
+    </div>
     <label for="age-select">Select Age Group</label>
     <select name="age" id="age-select">
         <option value="">under 18</option>
         <option value="17">17</option>
         <option value="16">16</option>
     </select>
+    <br>
     <button>Register!</button>
 
 </form>
