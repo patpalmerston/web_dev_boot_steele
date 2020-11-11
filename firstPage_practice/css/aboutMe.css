@@ -1,4 +1,29 @@
-header a {
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1f1b29;
+}
+
+button {
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,
+        transform 0.25s;
+}
+
+button:hover {
+    border-color: #f1f15c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+/* header a {
     font-size: 30px;
     color: teal;
 }
@@ -38,7 +63,7 @@ li {
     background-color: black;
 }
 
-/* =============== */
+
 section {
     width: 500px;
     height: 500px;
@@ -55,4 +80,4 @@ section {
     height: 50%;
     background-color: yellow;
     opacity: 0.5;
-}
+} */
