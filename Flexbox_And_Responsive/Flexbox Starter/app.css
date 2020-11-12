@@ -4,11 +4,18 @@ body {
 h1 {
     text-align: center;
 }
+/* turn on the parent to give the children access to flex box, using the display flex command */
 #container {
     background-color: #003049;
     width: 90%;
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
+#container div {
+    height: 200px;
+    width: 200px;
+}
