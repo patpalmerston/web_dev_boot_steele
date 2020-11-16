@@ -8,27 +8,46 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     flex-wrap: wrap;
     /* align-content: center; */
 }
 
 #container div {
     height: 50px;
-    width: 50px;
+    width: 200px;
     font-size: 1em;
     text-align: center;
+    flex-basis: 50px;
 }
 
-div:nth-of-type(2) {
+/* div:nth-of-type(2) {
     align-self: center;
 }
 div:nth-of-type(3) {
     align-self: flex-end;
+} */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    flex: 1 2 50px;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 200px;
 }
