@@ -1,7 +1,7 @@
 console.log("before conditional")
 
-if (1 + 2 == 3) {
-  console.log("math works")
+if (0) {
+  console.log("Truthy")
+} else {
+  console.log("Falsy")
 }
-
-console.log('after conditional')
