@@ -1,7 +1,9 @@
 console.log("before conditional")
 
-if (0) {
-  console.log("Truthy")
+const password = prompt("enter pass")
+
+if(password.length >= 6 && password.indexOf(' ') === -1) {
+  console.log('valid')
 } else {
-  console.log("Falsy")
+  console.log('invalid')
 }
